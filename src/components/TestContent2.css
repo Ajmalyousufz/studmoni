@@ -1,0 +1,223 @@
+
+.standards-grid{
+
+    opacity: 1;
+    max-height: 500px;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+.standards-grid.hidden {
+    opacity: 0;
+    max-height: 0;
+}
+
+.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+}
+
+.standard-card {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.standard-card:hover {
+    background: #ddd;
+}
+
+.standard-details {
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.students-section, .subjects-section {
+    margin-top: 10px;
+}
+
+.students-section h3, .subjects-section h3 {
+    margin-bottom: 5px;
+}
+
+.students-section ul, .subjects-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.students-section li, .subjects-section li {
+    background: #eaeaea;
+    padding: 5px;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+
+.back-button {
+    background: #007bff;
+    color: white;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.loader-overlay {
+    position: fixed; /* Position the overlay fixed to the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the loader is on top */
+    backdrop-filter: blur(5px); /* Apply blur effect to background */
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #f1f1f1;
+}
+.fab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #366238;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 28px;
+    width: 79px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fab-button:hover {
+    background-color: #45a049;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+.modal input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #f1f1f1;
+}  

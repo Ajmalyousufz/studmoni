@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  /* Add this to your CSS file (e.g., Signin.css) */
+.loader {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Light gray */
+    border-top: 4px solid #fff; /* White */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .App {
+    position: relative;
+    width: 100%;
+  }
+  
+  .App-header {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .standards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .standard-card {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .standard-card:hover {
+    background-color: #ddd;
+  }
+  
+  .floating-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .floating-button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sub-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .sub-button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list-column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .btn-button {
+    color: white; /* Text color */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.5rem; /* Padding */
+    background-color: blue; /* Background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .btn-button:hover {
+    background-color: darkblue; /* Darken background on hover */
+  }
+  
+  
+  .scrollable-list {
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .unit-group {
+    margin-bottom: 20px;
+  }
+  
+  .content-item {
+    margin-left: 15px; /* Indent contents under the unit */
+    margin-bottom: 10px;
+  }
+  
+  .content-image {
+    max-width: 100%;
+    max-height: 150px;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  
+  
+  .list-item {
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .text-input,
+  .number-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-add-button,
+  .modal-close-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  .subject-page {
+    padding: 20px;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+  }
+  
+  .subject-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .subject-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scrollable-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  .unit-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  
+
+.modal-add-button,
+.modal-close-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.action-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f7f7f7; /* Slightly different from parent background */
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto; /* Aligns to the right */
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-icon:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  .delete-icon:hover {
+    color: #dc3545; /* Red on hover */
+  }
+  
